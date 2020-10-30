@@ -1,3 +1,3 @@
-project_id = "REPLACE_ME"
-member_id  = "REPLACE_ME"
+project_id = "ac-289902"
+member_id  = "01"
 region     = "us-central1"
