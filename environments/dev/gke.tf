@@ -46,12 +46,3 @@ resource "google_container_node_pool" "primary_nodes" {
     }
   }
 }
-
-module "gke_auth" {
-  source  = "terraform-google-modules/kubernetes-engine/google//modules/auth"
-  version = "~> 9.1"
-
-  project_id   = var.project_id
-  cluster_name = google_container_cluster.primary.name
-  location     = google_container_cluster.primary.location
-}
