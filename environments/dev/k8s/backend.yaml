@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: eshop-backend
-          image: gcr.io/architect-certification-289902/eshop-backend@sha256:7191f01f829934cdab8fd871e894e6f9670a811cca43f54217f91ec91014e5f9
+          image: gcr.io/architect-certification-289902/01/eshop-backend@sha256:2f4435e3f662f2272b9531700ed8ea5dcc3bed37b9641919f9d93b49dcd5680b
           ports:
           - containerPort: 8090
           env:

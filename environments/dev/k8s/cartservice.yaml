@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: eshop-cartservice
-          image: gcr.io/architect-certification-289902/eshop-cartservice@sha256:a1fe09957c0b8850b48b2be61be5fcf8fe1f27cb8ae126d47e2aab58b1f3ad1e
+          image: gcr.io/architect-certification-289902/01/eshop-cartservice@sha256:1d3551db2cca108e3b8cdbcb4fd1936cd7565f8108e3873ef77f345408aafce4
           ports:
           - containerPort: 8091
           env:
