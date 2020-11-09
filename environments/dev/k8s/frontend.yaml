@@ -13,12 +13,9 @@ spec:
     spec:
       containers:
         - name: eshop-frontend
-          image: gcr.io/architect-certification-289902/eshop-frontend@sha256:5065a8473eb9814b1923216ac3cb45dba64a3bb949e54873e80090816fd8d361
+          image: gcr.io/architect-certification-289902/eshop-frontend@sha256:3bae385fde4126da3fb59f88149a036e21021803f5957d25cf2e95fd10668ec6
           ports:
           - containerPort: 8080
-          env:
-          - name: VUE_APP_BASE_URL
-            value: http://localhost/api  
           resources:
             requests:
               cpu: 100m
