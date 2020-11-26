@@ -6,5 +6,5 @@ spec:
   size: 3
   version: "2.1.8"
   pod:
-  annotations:
-    sidecar.istio.io/inject: "false"
+    annotations:
+      sidecar.istio.io/inject: "false"
