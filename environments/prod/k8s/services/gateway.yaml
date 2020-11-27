@@ -109,6 +109,5 @@ spec:
     route:
     - destination:
         host: eshop-frontend
-        subset: v2
         port:
           number: 8080
