@@ -1,10 +1,21 @@
 apiVersion: "networking.istio.io/v1alpha3"
 kind: "DestinationRule"
 metadata:
-  name: to-default-namespace
+  name: nast rule
   namespace: default
 spec:
   host: "*.nats.svc.cluster.local"
+  trafficPolicy:
+    tls:
+      mode: DISABLE
+---
+apiVersion: "networking.istio.io/v1alpha3"
+kind: "DestinationRule"
+metadata:
+  name: dbs rule
+  namespace: default
+spec:
+  host: "*.dbs.svc.cluster.local"
   trafficPolicy:
     tls:
       mode: DISABLE
