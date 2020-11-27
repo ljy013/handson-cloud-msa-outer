@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: eshop-frontend-v1
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: eshop-frontend
@@ -30,6 +31,7 @@ kind: Deployment
 metadata:
   name: eshop-frontend-v2
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: eshop-frontend
