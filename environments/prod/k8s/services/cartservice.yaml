@@ -19,7 +19,7 @@ spec:
           - containerPort: 8091
           env:
             - name: SPRING_REDIS_HOST
-              value: redis
+              value: redis-redis-cluster.default.svc.cluster.local:6379
             - name: NATS_SPRING_SERVER
               value: "nats://nats-cluster.nats.svc.cluster.local:4222"
 ---

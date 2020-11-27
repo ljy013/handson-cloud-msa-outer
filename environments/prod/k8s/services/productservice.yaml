@@ -22,7 +22,7 @@ spec:
         - name: PORT
           value: "8092"
         - name: MONGO_URI
-          value: "mongodb://admin:password@mongodb"
+          value: "mongodb://mongodb-arbiter-headless.dbs.svc.cluster.local/?replicaSet=rs0"
         - name: INIT_DATA
           value: "true"
         resources:
