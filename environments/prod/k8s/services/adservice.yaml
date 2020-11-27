@@ -19,7 +19,11 @@ spec:
           - containerPort: 8095
           env:
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:postgresql://postgresql-ha-postgresql-headless.dbs.svc.cluster.local:5432/eshop_db"
+              value: "jdbc:postgresql://postgresql-postgresql-ha-postgresql-headless.default.dbs.cluster.local:5432/eshop_db"
+            - name: SPRING_DATASOURCE_USERNAME
+              value: "eshop_user"
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: "password"
 ---
 apiVersion: v1
 kind: Service
